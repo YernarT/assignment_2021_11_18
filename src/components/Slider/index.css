@@ -1,0 +1,70 @@
+.slider {
+	width: 100%;
+	height: 430px;
+
+	overflow: hidden;
+
+	position: relative;
+}
+
+.slider .slider-list {
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+}
+
+.slider .slider-list .item {
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	opacity: 0;
+
+	transition: opacity 0.3s ease;
+}
+
+.slider .slider-list .item--active {
+	opacity: 1;
+}
+
+.slider .slider-list .item .image {
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
+/* controller */
+.slider .controller {
+	height: 40px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+
+	padding: 10px;
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	background-color: var(--primary-color);
+}
+
+.slider .controller .left-arrow,
+.slider .controller .right-arrow {
+	cursor: pointer;
+}
+
+.slider .controller .left-arrow {
+	transform: rotate(-90deg);
+}
+
+.slider .controller .right-arrow {
+	transform: rotate(90deg);
+}

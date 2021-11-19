@@ -1,0 +1,29 @@
+.arrow {
+	position: relative;
+
+	overflow: hidden;
+}
+
+.arrow .line-1,
+.arrow .line-2 {
+	position: absolute;
+
+	transform-origin: 0 0;
+
+	height: 1px;
+}
+
+.arrow .line-1 {
+	left: -1px;
+	top: 72.5%;
+
+	transform: rotate(-45deg);
+}
+
+.arrow .line-2 {
+	right: 0;
+	top: 72.5%;
+
+	transform-origin: 100% 100%;
+	transform: rotate(45deg);
+}
