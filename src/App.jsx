@@ -1,8 +1,16 @@
 import React from 'react';
 
-// import '@assets/style/customize.less';
-// import '@assets/style/antd.less';
+import { WelcomeSection, DisplayArea } from './components';
+
+import './assets/styles/customize.css';
+import './assets/styles/variables.css';
+import './assets/styles/App.css';
 
 export default function App() {
-	return <h1>hello world</h1>;
+	return (
+		<div className="app">
+			<WelcomeSection />
+			<DisplayArea />
+		</div>
+	);
 }
